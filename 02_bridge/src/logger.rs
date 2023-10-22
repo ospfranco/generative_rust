@@ -1,9 +1,7 @@
-
-use log::{Record, Level, Metadata};
-
+use log::{Level, Metadata, Record};
 
 pub struct SimpleLogger {
-    pub enabled: bool
+    pub enabled: bool,
 }
 
 impl log::Log for SimpleLogger {
@@ -19,4 +17,3 @@ impl log::Log for SimpleLogger {
 
     fn flush(&self) {}
 }
-
