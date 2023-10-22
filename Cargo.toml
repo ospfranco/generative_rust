@@ -7,3 +7,4 @@ authors = ["Oscar Franco <ospfranco@gmail.com>"]
 [dependencies]
 log = "0.4.20"
 nannou = "0.18.1"
+rand = "0.8.5"
