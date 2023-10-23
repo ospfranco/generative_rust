@@ -120,14 +120,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0d8c1fef690941d3e7788d328517591fecc684c084084702d6ff1641e993699a"
 
 [[package]]
-name = "bridge"
-version = "0.1.0"
-dependencies = [
- "log",
- "nannou",
-]
-
-[[package]]
 name = "bumpalo"
 version = "3.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1168,7 +1160,7 @@ dependencies = [
  "nannou_core",
  "nannou_mesh",
  "nannou_wgpu",
- "noise",
+ "noise 0.7.0",
  "notosans",
  "num_cpus",
  "pennereq",
@@ -1284,6 +1276,14 @@ dependencies = [
  "cc",
  "cfg-if 1.0.0",
  "libc",
+]
+
+[[package]]
+name = "noise"
+version = "0.1.0"
+dependencies = [
+ "log",
+ "nannou",
 ]
 
 [[package]]
