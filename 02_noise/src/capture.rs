@@ -1,6 +1,6 @@
 use nannou::{App, Frame};
 
-use crate::config::CAPTURE_OUTPUT;
+use crate::config;
 
 fn captured_frame_path(app: &App, frame: &Frame) -> std::path::PathBuf {
     app.project_path()
@@ -11,7 +11,7 @@ fn captured_frame_path(app: &App, frame: &Frame) -> std::path::PathBuf {
 }
 
 pub fn capture(app: &App, frame: Frame) {
-    if frame.nth() < 2000 && CAPTURE_OUTPUT {
+    if frame.nth() < config::CAPTURE_FRAMES && config::CAPTURE_OUTPUT {
         let file_path = captured_frame_path(app, &frame);
         app.main_window().capture_frame(file_path);
     }
