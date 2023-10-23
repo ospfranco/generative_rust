@@ -1,5 +1,5 @@
 [package]
-name = "bridge"
+name = "noise"
 version = "0.1.0"
 edition = "2021"
 authors = ["Oscar Franco <ospfranco@gmail.com>"]
