@@ -1,5 +1,5 @@
 use config::PARTICLE_COUNT;
-use log::{warn, LevelFilter};
+use log::LevelFilter;
 use nannou::noise::NoiseFn;
 use nannou::prelude::*;
 
