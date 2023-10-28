@@ -60,7 +60,7 @@ fn model(app: &App) -> Model {
 
     let h = t - b;
 
-    warn!("{} {}", w, window.w());
+    // warn!("{} {}", w, window.w());
 
     let mut p = vec![];
     for _i in 0..PARTICLE_COUNT {
