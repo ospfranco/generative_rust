@@ -1,0 +1,10 @@
+[package]
+name = "mandelbroot"
+version = "0.1.0"
+edition = "2021"
+authors = ["Oscar Franco <ospfranco@gmail.com>"]
+
+[dependencies]
+colored = "2.0.4"
+log = "0.4.20"
+nannou = "0.18.1"
